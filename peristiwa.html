@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peristiwa Penting | Majapahit</title>
+<link rel="icon" type="image/png" href="image/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/peristiwa.css">
+
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="logo">
+        <img src="image/title.png" alt="Logo Majapahit">
+    </div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="peta.html">Peta</a></li>
+        <li><a href="tokoh.html">Tokoh</a></li>
+        <li><a href="peristiwa.html" class="active">Peristiwa</a></li>
+        <li><a href="peninggalan.html">Peninggalan</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+</nav>
+
+<section class="hero-peristiwa">
+</section>
+
+<section class="news-section">
+
+    <div class="headline-card" onclick="openPeristiwaPopup('tahta')">
+        <img src="image/headline.png" alt="Naik Tahta">
+        <div class="headline-overlay">
+            <span class="news-badge">Headline</span>
+            <h2>Hayam Wuruk Naik Tahta: Babak Baru Kejayaan Majapahit (1350)</h2>
+            <p>
+                Pada tahun 1350, Hayam Wuruk resmi dinobatkan sebagai Raja Majapahit
+                menggantikan ibundanya, Tribhuwana Tunggadewi. Di bawah kepemimpinannya,
+                Majapahit mencapai puncak kejayaan yang belum pernah terjadi sebelumnya.
+            </p>
+        </div>
+    </div>
+
+    <div class="news-grid">
+
+        <div class="news-card" onclick="openPeristiwaPopup('lahir')">
+            <img src="image/lahir.png" alt="Kelahiran Hayam Wuruk">
+            <div class="news-body">
+                <span class="news-category">Sejarah</span>
+                <h3>Kelahiran Hayam Wuruk, Calon Raja Agung Majapahit (1334)</h3>
+                <p>
+                    Lahirnya sang pangeran yang kelak membawa Majapahit
+                    menjadi kerajaan terbesar di Nusantara.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="openPeristiwaPopup('bubat')">
+            <img src="image/bubat.png" alt="Peristiwa Bubat">
+            <div class="news-body">
+                <span class="news-category">Konflik</span>
+                <h3>Peristiwa Bubat: Tragedi yang Mengguncang Dua Kerajaan (1357)</h3>
+                <p>
+                    Insiden di Bubat merenggangkan hubungan Majapahit
+                    dengan Kerajaan Sunda dan meninggalkan luka sejarah.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="openPeristiwaPopup('kitab')">
+            <img src="image/kitab.png" alt="Negarakertagama">
+            <div class="news-body">
+                <span class="news-category">Sastra</span>
+                <h3>Mpu Prapanca Rampungkan Kitab Negarakertagama (1365)</h3>
+                <p>
+                    Kitab agung yang menjadi sumber sejarah utama dan
+                    bukti kejayaan peradaban Majapahit.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="openPeristiwaPopup('wafat')">
+            <img src="image/wafat.png" alt="Wafatnya Hayam Wuruk">
+            <div class="news-body">
+                <span class="news-category">Akhir Era</span>
+                <h3>Wafatnya Hayam Wuruk, Penanda Akhir Zaman Keemasan (1389)</h3>
+                <p>
+                    Kepergian sang raja menandai berakhirnya era kejayaan
+                    Majapahit yang gemilang selama hampir empat dekade.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="openPeristiwaPopup('sumpah')">
+            <img src="image/sumpah.png" alt="Sumpah Palapa">
+            <div class="news-body">
+                <span class="news-category">Politik</span>
+                <h3>Sumpah Palapa Gajah Mada: Tekad Menyatukan Nusantara (1336)</h3>
+                <p>
+                    Maha patih Gajah Mada bersumpah tidak akan menikmati
+                    palapa sebelum Nusantara bersatu di bawah Majapahit.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="openPeristiwaPopup('ekspansi')">
+            <img src="image/ekspansi.png" alt="Ekspedisi Pamalayu">
+            <div class="news-body">
+                <span class="news-category">Ekspansi</span>
+                <h3>Ekspansi Wilayah: Majapahit Kuasai Lebih dari 100 Daerah (1350-1365)</h3>
+                <p>
+                    Di bawah Hayam Wuruk dan Gajah Mada, pengaruh Majapahit
+                    meluas hingga mencakup hampir seluruh kepulauan Nusantara.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-label">
+        <span>Sorotan</span>
+    </div>
+
+    <div class="sorotan-grid">
+
+        <div class="sorotan-card" onclick="openPeristiwaPopup('warisan')">
+            <img src="image/warisan.png" alt="Sorotan 1">
+            <div class="sorotan-body">
+                <span class="news-category">Budaya</span>
+                <h3>Majapahit dan Warisan Seni Ukir yang Mengagumkan</h3>
+            </div>
+        </div>
+
+        <div class="sorotan-card" onclick="openPeristiwaPopup('toleransi')">
+            <img src="image/toleransi.png" alt="Sorotan 2">
+            <div class="sorotan-body">
+                <span class="news-category">Agama</span>
+                <h3>Toleransi Beragama di Era Kejayaan Majapahit</h3>
+            </div>
+        </div>
+
+        <div class="sorotan-card" onclick="openPeristiwaPopup('pelabuhan')">
+            <img src="image/pelabuhan.png" alt="Sorotan 3">
+            <div class="sorotan-body">
+                <span class="news-category">Ekonomi</span>
+                <h3>Pelabuhan Majapahit: Pusat Perdagangan Nusantara</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POPUP MODAL -->
+<div id="peristiwaPopup" class="pp-overlay">
+    <div class="pp-modal">
+        <button class="pp-close" onclick="closePeristiwaPopup()">✕</button>
+        <div class="pp-img-wrap">
+            <img id="ppImg" src="" alt="">
+            <span id="ppCategory" class="pp-badge"></span>
+        </div>
+        <div class="pp-content">
+            <h2 id="ppTitle"></h2>
+            <div class="pp-year" id="ppYear"></div>
+            <div class="pp-desc" id="ppDesc"></div>
+            <div class="pp-impact-box">
+                <span class="pp-impact-label">⚡ Dampak Sejarah</span>
+                <p id="ppImpact"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Website Edukasi Majapahit Era Hayam Wuruk</p>
+</footer>
+
+<script src="js/peristiwa.js"></script>
+<script src="js/main.js"></script>
+<button id="floatMusicBtn" onclick="toggleBacSound(this)">🎵 Musik</button>
+</body>
+</html>

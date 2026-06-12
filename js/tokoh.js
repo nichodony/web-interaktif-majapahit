@@ -1,0 +1,1 @@
+console.log("Halaman Tokoh Hayam Wuruk berhasil dimuat");

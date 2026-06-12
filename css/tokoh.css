@@ -1,0 +1,239 @@
+.hero-tokoh{
+    padding:140px 80px 80px;
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:70%;
+    max-width:330px;
+
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.hero-text{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    background:#efe5d5;
+    color:#6B4423;
+    border-radius:50px;
+    margin-bottom:20px;
+}
+
+.hero-text h1{
+    font-family:'Cinzel',serif;
+    font-size:64px;
+    color:#6B4423;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.statistik{
+    padding:0 80px 80px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.stat-card h2{
+    color:#B8860B;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Cinzel',serif;
+    font-size:42px;
+    color:#6B4423;
+    margin-bottom:50px;
+}
+
+.timeline-section,
+.achievement-section{
+    padding:80px;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.timeline-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.timeline-card h3{
+    color:#B8860B;
+    margin-bottom:10px;
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.achievement-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.achievement-card span{
+    font-size:40px;
+}
+
+.achievement-card h3{
+    margin:15px 0;
+}
+
+.gajahmada{
+    padding:80px;
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.gajah-image{
+    flex:1;
+    text-align:center;
+}
+
+.gajah-image img{
+    width:75%;
+    max-width:310px;
+
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.gajah-text{
+    flex:1;
+}
+
+.gajah-text h2{
+    font-family:'Cinzel',serif;
+    color:#6B4423;
+    margin-bottom:20px;
+}
+
+.gajah-text p{
+    line-height:1.9;
+}
+
+.quote{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.quote h2{
+    max-width:900px;
+    margin:auto;
+    font-family:'Cinzel',serif;
+    color:#6B4423;
+    line-height:1.6;
+}
+
+.navigation-btn{
+    padding-bottom:100px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+@media(max-width:1000px){
+
+.hero-tokoh,
+.gajahmada{
+    flex-direction:column;
+    padding:130px 25px 50px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.statistik{
+    padding:25px;
+    grid-template-columns:1fr 1fr;
+}
+
+.timeline-section,
+.achievement-section{
+    padding:25px;
+}
+
+.timeline,
+.achievement-grid{
+    grid-template-columns:1fr;
+}
+
+.quote{
+    padding:60px 25px;
+}
+
+.navigation-btn{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+/* ======================
+   GAJAH MADA
+====================== */
+
+.gajahmada-section{
+
+    padding:100px 80px;
+
+    border-top:1px solid #d8c7aa;
+
+    background:#f8f3ea;
+}
+
+.gajahmada-section .hero-image img{
+
+    max-width:420px;
+    width:100%;
+}
+
+.gajahmada-section .hero-text h1{
+
+    color:#6B4423;
+}
+
+.gajahmada-section .badge{
+
+    background:#e8d9c3;
+    color:#6B4423;
+}

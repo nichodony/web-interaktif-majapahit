@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peninggalan Majapahit</title>
+<link rel="icon" type="image/png" href="image/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/peninggalan.css">
+
+</head>
+
+<body>
+
+<nav id="navbar">
+
+<div class="logo">
+    <img src="image/title.png" alt="Logo Majapahit">
+</div>
+
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="peta.html">Peta</a></li>
+<li><a href="tokoh.html">Tokoh</a></li>
+<li><a href="peristiwa.html">Peristiwa</a></li>
+<li><a href="peninggalan.html">Peninggalan</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+<li><a href="tentang.html">Tentang</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Peninggalan Majapahit</h1>
+
+<p>
+Warisan sejarah yang masih dapat ditemukan hingga saat ini sebagai bukti kejayaan Kerajaan Majapahit.
+</p>
+
+</section>
+
+<section class="gallery">
+
+<div class="card" onclick="openPopup(0)">
+<img src="image/tikus.png">
+<h3>Candi Tikus</h3>
+</div>
+
+<div class="card" onclick="openPopup(1)">
+<img src="image/bajang.png">
+<h3>Candi Bajang Ratu</h3>
+</div>
+
+<div class="card" onclick="openPopup(2)">
+<img src="image/brahu.png">
+<h3>Candi Brahu</h3>
+</div>
+
+<div class="card" onclick="openPopup(3)">
+<img src="image/negarakertagama.png">
+<h3>Kitab Negarakertagama</h3>
+</div>
+
+<div class="card" onclick="openPopup(4)">
+<img src="image/kolam.png">
+<h3>Kolam Segaran</h3>
+</div>
+
+</section>
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <div class="popup-header">
+
+            <h2 id="popupTitle"></h2>
+
+            <button
+            class="close-btn"
+            onclick="closePopup()">
+                ✕
+            </button>
+
+        </div>
+
+        <!-- Area Konten Dinamis -->
+        <div id="viewer360"></div>
+
+        <!-- Deskripsi -->
+        <div class="popup-desc">
+            <p id="popupDesc"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Website Edukasi Majapahit Era Hayam Wuruk
+</p>
+
+</footer>
+
+<script src="js/peninggalan.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+</body>
+</html>

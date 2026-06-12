@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Majapahit</title>
+<link rel="icon" type="image/png" href="image/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quiz.css">
+
+</head>
+
+<body>
+
+
+<nav id="navbar">
+
+    <div class="logo">
+        <img src="image/title.png" alt="Logo Majapahit">
+    </div>
+
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="peta.html">Peta</a></li>
+        <li><a href="tokoh.html">Tokoh</a></li>
+        <li><a href="peristiwa.html">Peristiwa</a></li>
+        <li><a href="peninggalan.html">Peninggalan</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero-quiz">
+
+    <div class="ornament-left"></div>
+    <div class="ornament-right"></div>
+
+    <h1>
+        Uji Pengetahuanmu
+    </h1>
+
+    <p>
+    Jawab 10 pertanyaan seputar Hayam Wuruk,
+    Gajah Mada, dan kejayaan Majapahit untuk
+    mengetahui gelarmu dalam kerajaan.
+    </p>
+
+</section>
+
+<section class="quiz-wrapper">
+
+    <div class="quiz-card">
+
+        <div class="quiz-top">
+
+            <span id="questionNumber">
+                Pertanyaan 1 dari 10
+            </span>
+
+            <div class="progress-bar">
+                <div class="progress-fill"
+                id="progressFill"></div>
+            </div>
+
+        </div>
+
+        <h2 id="questionText"></h2>
+
+        <div id="options"
+        class="options-container">
+        </div>
+
+        <div id="feedbackBox"></div>
+
+        <button
+        class="btn"
+        id="nextBtn"
+        style="display:none;">
+            Soal Berikutnya
+        </button>
+
+    </div>
+
+</section>
+
+<div id="resultBox"></div>
+<div id="badgeResult"></div>
+
+<footer>
+    <p>
+        © 2026 Website Edukasi Majapahit Era Hayam Wuruk
+    </p>
+</footer>
+
+<script src="js/quiz.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

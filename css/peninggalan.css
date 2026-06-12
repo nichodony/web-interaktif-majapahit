@@ -1,0 +1,557 @@
+.hero{
+
+padding:150px 80px 60px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-family:'Cinzel',serif;
+font-size:clamp(28px,5vw,60px);
+color:#6B4423;
+margin-bottom:20px;
+}
+
+.hero p{
+
+max-width:800px;
+margin:auto;
+
+line-height:1.8;
+}
+
+.gallery{
+
+padding:40px 80px 80px;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+}
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+}
+
+.card img{
+
+width:100%;
+height:230px;
+
+object-fit:cover;
+}
+
+.card h3{
+
+padding:20px;
+text-align:center;
+
+color:#6B4423;
+}
+
+.popup{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.7);
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+}
+
+.popup-content{
+
+background:white;
+
+width:90%;
+max-width:700px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+position:relative;
+
+animation:showPopup .3s ease;
+}
+
+.popup-content img{
+
+width:100%;
+height:350px;
+
+object-fit:cover;
+}
+
+.popup-content h2{
+
+padding:25px 25px 10px;
+
+color:#ffffff;
+}
+
+.popup-content p{
+
+padding:0 25px 30px;
+
+line-height:1.9;
+}
+
+.close-btn{
+
+position:absolute;
+
+top:15px;
+right:15px;
+
+width:40px;
+height:40px;
+
+border:none;
+
+border-radius:50%;
+
+background:white;
+
+cursor:pointer;
+
+font-size:18px;
+}
+
+.next-page{
+
+padding-bottom:100px;
+
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+@keyframes showPopup{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:130px 25px 40px;
+}
+
+.hero h1{
+
+font-size:42px;
+}
+
+.gallery{
+
+padding:25px;
+}
+
+.next-page{
+
+flex-direction:column;
+align-items:center;
+}
+
+}
+.btn360{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#8b5a2b;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn360:hover{
+    background:#6b3f17;
+    transform:scale(1.05);
+}
+
+.popup-content{
+    width:min(1100px,95vw);
+    background: #f5f1eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#viewer360{
+    flex:1;
+}
+
+#viewer360 iframe{
+    width: 100%;
+    height: min(60vh, 500px);
+    border: none;
+    display: block;
+}
+
+@keyframes popupShow{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.popup-header{
+    background:#8b5a2b;
+    color:white;
+    padding:20px;
+    text-align:center;
+    position:relative;
+}
+
+.popup-header h2{
+    margin:0;
+    font-family:'Cinzel',serif;
+}
+
+#viewer360 iframe,
+#viewer360 embed{
+    width:100%;
+    height:600px;
+    border:none;
+    display:block;
+}
+.popup-desc{
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-desc p{
+    color:#555;
+    line-height:1.8;
+}
+.close-btn{
+    position:absolute;
+    right:15px;
+    top:15px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    color:#8b5a2b;
+    font-size:20px;
+    cursor:pointer;
+}
+.popup-desc{
+    padding:15px 25px;
+    background:#f5f1eb;
+}
+#bookContainer{
+    width:100%;
+    height:700px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page{
+    background:#f7efd5;
+    padding:40px;
+    font-family:'Poppins',sans-serif;
+    color:#4a3421;
+}
+
+.page h2,
+.page h3{
+    font-family:'Cinzel',serif;
+    color:#6b3f17;
+}
+#viewer360{
+    width:100%;
+}
+
+#viewer360 iframe{
+    width:100%;
+    height:550px;
+    border:none;
+    display:block;
+}
+
+.book-view{
+    padding:40px;
+    text-align:center;
+}
+
+.book-cover img{
+    width:220px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.book-cover h3{
+    font-family:'Cinzel',serif;
+    margin-bottom:15px;
+}
+
+.book-cover p{
+    max-width:500px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.book-btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#8b5a2b;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#6f441e;
+}
+.popup-content{
+    width:min(1100px,95vw);
+    max-height:90vh;
+
+    background:#f5f1eb;
+    border-radius:20px;
+
+    overflow-y:auto; 
+    overflow-x:hidden;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.popup-header{
+    flex-shrink:0;
+}
+
+#viewer360{
+    flex:1;
+    min-height:0;
+}
+
+#viewer360 iframe,
+#viewer360 embed{
+    width:100%;
+    height:55vh;
+    border:none;
+    display:block;
+}
+
+.popup-desc{
+    flex-shrink:0;
+    padding:15px 25px;
+    background:#f5f1eb;
+}
+/* ========================= */
+/* RESPONSIVE IMPROVEMENT    */
+/* ========================= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .hero{
+        padding:130px 40px 50px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .gallery{
+        padding:30px;
+        gap:20px;
+    }
+
+    .popup-content{
+        width:95vw;
+        max-height:90vh;
+        overflow-y:auto;
+    }
+
+    #viewer360 iframe,
+    #viewer360 embed{
+        height:450px;
+    }
+}
+
+/* HP */
+@media (max-width:768px){
+
+    .hero{
+        padding:120px 20px 40px;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    .popup-content{
+        width:95vw;
+        max-height:90vh;
+        overflow-y:auto;
+        border-radius:15px;
+    }
+
+    .popup-header{
+        padding:15px;
+    }
+
+    .popup-header h2{
+        font-size:24px;
+        padding-right:40px;
+    }
+
+    #viewer360 iframe,
+    #viewer360 embed{
+        height:300px;
+    }
+
+    .popup-desc{
+        padding:15px;
+    }
+
+    .popup-desc p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .book-view{
+        padding:20px;
+    }
+
+    .book-cover img{
+        width:150px;
+    }
+
+    .book-cover h3{
+        font-size:22px;
+    }
+
+    .book-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .close-btn{
+        width:35px;
+        height:35px;
+        font-size:18px;
+    }
+}
+
+/* HP kecil */
+@media (max-width:480px){
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+    #viewer360 iframe,
+    #viewer360 embed{
+        height:250px;
+    }
+
+    .popup-header h2{
+        font-size:20px;
+    }
+
+    .popup-desc p{
+        font-size:13px;
+    }
+}
+
+/* Monitor besar */
+@media (min-width:1400px){
+
+    .popup-content{
+        max-width:1100px;
+    }
+
+    #viewer360 iframe,
+    #viewer360 embed{
+        height:650px;
+    }
+}
+
+/* FINAL AUDIT PATCH */
+html,body{overflow-x:hidden;}
+img{max-width:100%;height:auto;}
+
+@media(max-width:768px){
+    .gallery,.team-grid{gap:15px;}
+}
+
+.popup-content{max-height:92vh!important;overflow-y:auto!important;}
+#viewer360 iframe,#viewer360 embed{height:min(55vh,500px)!important;}
+@media(max-width:768px){
+#viewer360 iframe,#viewer360 embed{height:40vh!important;}
+}

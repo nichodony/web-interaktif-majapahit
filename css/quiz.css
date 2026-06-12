@@ -1,0 +1,401 @@
+/* HERO */
+
+.hero-quiz{
+
+padding-top:150px;
+padding-bottom:50px;
+
+text-align:center;
+}
+
+.hero-quiz h1{
+
+font-family:'Cinzel',serif;
+font-size:70px;
+color:#5c3b1e;
+margin-bottom:15px;
+}
+
+.hero-quiz p{
+
+font-size:20px;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+/* QUIZ */
+
+.quiz-wrapper{
+
+display:flex;
+justify-content:center;
+
+padding:20px 20px 100px;
+}
+
+.quiz-card{
+
+width:100%;
+max-width:900px;
+
+background:white;
+
+padding:50px;
+
+border-radius:30px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+}
+
+/* TOP */
+
+.quiz-top{
+
+margin-bottom:40px;
+}
+
+#questionNumber{
+
+display:inline-block;
+
+background:#6B4423;
+color:white;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-weight:600;
+margin-bottom:20px;
+}
+
+.progress-bar{
+
+height:12px;
+
+background:#eee;
+
+border-radius:30px;
+
+overflow:hidden;
+}
+
+.progress-fill{
+
+height:100%;
+
+width:10%;
+
+background:#d4a017;
+
+transition:.4s;
+}
+
+/* SOAL */
+
+#questionText{
+
+font-size:32px;
+
+color:#4b321d;
+
+margin-bottom:35px;
+
+text-align:center;
+}
+
+/* OPSI */
+
+.options-container{
+
+display:grid;
+gap:18px;
+}
+
+.option{
+
+padding:20px;
+
+background:#f7f1e7;
+
+border:2px solid transparent;
+
+border-radius:15px;
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:500;
+
+transition:.3s;
+}
+
+.option:hover{
+
+transform:translateY(-3px);
+
+border-color:#b8860b;
+}
+
+/* BENAR */
+
+.correct{
+
+background:#2ecc71 !important;
+color:white;
+border-color:#2ecc71;
+}
+
+/* SALAH */
+
+.wrong{
+
+background:#e74c3c !important;
+color:white;
+border-color:#e74c3c;
+}
+
+/* FEEDBACK */
+
+#feedbackBox{
+
+text-align:center;
+
+font-size:24px;
+
+font-weight:700;
+
+margin:25px 0;
+}
+
+/* BUTTON */
+
+#nextBtn{
+
+display:block;
+
+margin:auto;
+}
+
+/* HASIL */
+
+#resultBox{
+
+text-align:center;
+
+padding:50px;
+
+font-size:40px;
+
+font-weight:bold;
+
+color:#6B4423;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-quiz h1{
+
+font-size:45px;
+}
+
+.quiz-card{
+
+padding:25px;
+}
+
+#questionText{
+
+font-size:24px;
+}
+
+.option{
+
+font-size:16px;
+}
+}
+.correct{
+background:#2ecc71 !important;
+color:white;
+border-color:#2ecc71;
+}
+
+.wrong{
+background:#e74c3c !important;
+color:white;
+border-color:#e74c3c;
+}
+
+.feedback{
+margin-top:25px;
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-weight:600;
+line-height:1.8;
+}
+
+.correct-box{
+background:#e8fff0;
+color:#1e8449;
+border:2px solid #2ecc71;
+}
+
+.wrong-box{
+background:#fff0f0;
+color:#c0392b;
+border:2px solid #e74c3c;
+}
+
+.result-card{
+text-align:center;
+padding:40px;
+}
+
+.result-card h1{
+font-size:80px;
+margin-bottom:15px;
+}
+
+.result-card h2{
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#6B4423;
+margin-bottom:15px;
+}
+
+.result-card h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.result-card p{
+font-size:18px;
+line-height:1.8;
+}
+#nextBtn{
+
+display:none;
+
+margin:30px auto 0;
+
+padding:15px 35px;
+
+background:linear-gradient(
+135deg,
+#8B5E34,
+#6B4423
+);
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+font-family:'Poppins',sans-serif;
+
+cursor:pointer;
+
+transition:.3s ease;
+
+box-shadow:
+0 8px 20px rgba(107,68,35,.25);
+
+}
+
+#nextBtn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 12px 25px rgba(107,68,35,.35);
+
+background:linear-gradient(
+135deg,
+#9c6b3d,
+#7a4e2a
+);
+
+}
+
+#nextBtn:active{
+
+transform:scale(.97);
+
+}
+
+#nextBtn::after{
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+#nextBtn:hover::after{
+
+margin-left:5px;
+
+}
+.result-card .btn{
+
+margin-top:20px;
+
+padding:16px 40px;
+
+background:linear-gradient(
+135deg,
+#B8860B,
+#8B5E34
+);
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+font-size:17px;
+
+font-weight:600;
+
+font-family:'Poppins',sans-serif;
+
+cursor:pointer;
+
+transition:.3s ease;
+
+box-shadow:
+0 10px 25px rgba(184,134,11,.3);
+
+}
+
+.result-card .btn:hover{
+
+transform:translateY(-4px);
+
+background:linear-gradient(
+135deg,
+#d4a017,
+#a56b2a
+);
+
+box-shadow:
+0 15px 30px rgba(184,134,11,.4);
+
+}
+
+.result-card .btn:active{
+
+transform:scale(.96);
+
+}

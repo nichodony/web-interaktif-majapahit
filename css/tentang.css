@@ -1,0 +1,537 @@
+.about-hero {
+    padding: 160px 80px 80px;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        rgba(184, 134, 11, 0.08) 0%,
+        transparent 100%
+    );
+}
+
+.pens-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,.15));
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #B8860B;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.about-hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    color: #6B4423;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #5a4030;
+}
+.project-info {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 80px 60px;
+}
+
+.info-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: #6B4423;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d8c7aa;
+}
+
+.info-card table {
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 2.2;
+}
+
+.info-card table td {
+    padding: 6px 0;
+    color: #3d2917;
+    font-size: 16px;
+}
+
+.info-card table td:first-child {
+    width: 200px;
+    font-weight: 500;
+    color: #6B4423;
+}
+.lecturer-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 80px 60px;
+}
+
+.lecturer-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.lecturer-card img {
+    width: 110px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,.1));
+}
+
+.lecturer-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #B8860B;
+    margin-bottom: 8px;
+}
+
+.lecturer-card h3 {
+    font-size: 22px;
+    color: #6B4423;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.lecturer-card p {
+    line-height: 1.9;
+    color: #5a4030;
+    font-size: 15px;
+}
+.team-section {
+    padding: 0 80px 80px;
+}
+
+.team-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    text-align: center;
+    color: #6B4423;
+    margin-bottom: 10px;
+}
+
+.team-desc {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #7b5d3d;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(107, 68, 35, .18);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px auto 0;
+    display: block;
+    border: 3px solid #d8c7aa;
+}
+
+.team-card h3 {
+    padding: 15px 12px 5px;
+    color: #6B4423;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.team-card p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.team-card span {
+    display: block;
+    padding-bottom: 18px;
+    color: #B8860B;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* ---- 5. UCAPAN TERIMA KASIH ---- */
+
+.closing {
+    text-align: center;
+    padding: 60px 20px 100px;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(184, 134, 11, 0.06) 100%
+    );
+}
+
+.closing h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    color: #6B4423;
+    margin-bottom: 25px;
+}
+
+.closing p {
+    max-width: 700px;
+    margin: auto auto 35px;
+    line-height: 2;
+    color: #5a4030;
+    font-size: 16px;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .lecturer-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-info,
+    .lecturer-section,
+    .team-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 130px 25px 50px;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .project-info,
+    .lecturer-section,
+    .team-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-card table td:first-child {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .info-card table td {
+        font-size: 14px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .team-card img {
+        height: 180px;
+    }
+
+    .closing h2,
+    .team-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* SUMBER */
+
+.sources-section{
+
+padding:80px 8%;
+text-align:center;
+}
+
+.sources-section h2{
+
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#6B4423;
+margin-bottom:50px;
+}
+
+.sources-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.source-card.media{
+    grid-column:1 / -1;
+}
+
+.source-card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:left; /* ganti ini */
+}
+
+.source-card ul{
+    padding-left:25px;
+    margin-top:20px;
+}
+
+.source-card li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.source-card h3{
+
+color:#6B4423;
+margin-bottom:20px;
+}
+
+.source-card ul{
+
+padding-left:20px;
+line-height:1.9;
+}
+
+/* UCAPAN TERIMA KASIH */
+
+.closing{
+
+padding:80px 10%;
+
+text-align:center;
+}
+
+.closing h2{
+
+font-family:'Cinzel',serif;
+font-size:42px;
+
+color:#6B4423;
+
+margin-bottom:30px;
+}
+
+.closing p{
+
+max-width:1000px;
+
+margin:0 auto 20px;
+
+font-size:18px;
+
+line-height:1.9;
+}
+
+.source-card a{
+    color:#8b5a2b;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.source-card a:hover{
+    color:#6b3f17;
+    text-decoration:underline;
+}
+/* =============================================
+   SUMBER REFERENSI
+   ============================================= */
+
+.sources-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.sources-section h2{
+    font-family:'Cinzel',serif;
+    font-size:42px;
+    color:#6B4423;
+    margin-bottom:50px;
+}
+
+/* Layout 2 atas + 1 bawah */
+.sources-container{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+/* Card ketiga full lebar */
+.source-card.media{
+    grid-column:1 / -1;
+}
+
+.source-card{
+    background:#fff;
+    border-radius:30px;
+    padding:35px;
+    text-align:left;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.source-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.source-card h3{
+    color:#6B4423;
+    font-size:32px;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.source-card ul{
+    margin:0;
+    padding-left:25px;
+}
+
+.source-card li{
+    margin-bottom:18px;
+    line-height:1.9;
+    color:#4a3421;
+    font-size:17px;
+}
+
+.source-card b{
+    color:#3d2917;
+}
+
+.source-card a{
+    color:#8b5a2b;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.source-card a:hover{
+    color:#6b3f17;
+    text-decoration:underline;
+}
+
+/* Media Digital dibuat lebih rapi */
+.source-card.media ul{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px 40px;
+}
+
+/* Tablet */
+@media(max-width:992px){
+
+    .sources-container{
+        grid-template-columns:1fr;
+    }
+
+    .source-card.media{
+        grid-column:auto;
+    }
+
+    .source-card.media ul{
+        grid-template-columns:1fr;
+    }
+}
+
+/* HP */
+@media(max-width:768px){
+
+    .sources-section{
+        padding:60px 20px;
+    }
+
+    .sources-section h2{
+        font-size:32px;
+    }
+
+    .source-card{
+        padding:25px;
+    }
+
+    .source-card h3{
+        font-size:24px;
+    }
+
+    .source-card li{
+        font-size:15px;
+    }
+}
+
+/* FINAL AUDIT PATCH */
+html,body{overflow-x:hidden;}
+img{max-width:100%;height:auto;}
+
+@media(max-width:768px){
+    .gallery,.team-grid{gap:15px;}
+}
+
+.sources-container{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:30px;
+}
+@media(max-width:768px){
+.sources-container{grid-template-columns:1fr!important;}
+}

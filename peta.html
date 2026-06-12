@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peta Interaktif Majapahit</title>
+<link rel="icon" type="image/png" href="image/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/peta.css">
+
+</head>
+
+<body>
+
+<nav id="navbar">
+
+<div class="logo">
+    <img src="image/title.png" alt="Logo Majapahit">
+</div>
+
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="peta.html">Peta</a></li>
+<li><a href="tokoh.html">Tokoh</a></li>
+<li><a href="peristiwa.html">Peristiwa</a></li>
+<li><a href="peninggalan.html">Peninggalan</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+<li><a href="tentang.html">Tentang</a></li>
+</ul>
+
+</nav>
+
+<section class="hero-peta">
+
+<h1 class="page-title">
+Peta Interaktif Majapahit
+</h1>
+
+<p>
+Klik titik merah untuk mengetahui wilayah penting
+dan peristiwa bersejarah pada masa Hayam Wuruk.
+</p>
+
+</section>
+
+<section class="map-section">
+
+<div class="map-container">
+
+<img src="image/peta.png" alt="Peta Majapahit">
+
+<div class="marker"
+style="top:66.5%; left:36.8%;"
+onclick="showInfo('trowulan')">
+</div>
+
+<div class="marker"
+style="top:44%; left:21.8%;"
+onclick="showInfo('sumatera')">
+</div>
+
+<div class="marker"
+style="top:50.5%; left:41.5%;"
+onclick="showInfo('kalimantan')">
+</div>
+
+<div class="marker"
+style="top:71%; left:47.5%;"
+onclick="showInfo('bali')">
+</div>
+
+<div class="marker"
+style="top:57%; left:56%;"
+onclick="showInfo('sulawesi')">
+</div>
+
+<div class="marker"
+style="top:44%; left:87.5%;"
+onclick="showInfo('maluku')">
+</div>
+
+</div>
+
+</section>
+
+<div id="popup">
+
+    <div class="popup-content">
+
+        <span class="close-btn"
+        onclick="closePopup()">
+        ✕
+        </span>
+
+        <img id="popupImg">
+
+        <h2 id="popupTitle"></h2>
+
+        <div id="popupYear"></div>
+
+        <p id="popupDesc"></p>
+
+        <div class="impact-box">
+
+            <h3>Dampak</h3>
+
+            <p id="popupImpact"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Website Edukasi Majapahit Era Hayam Wuruk
+</p>
+
+</footer>
+
+<script src="js/peta.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
